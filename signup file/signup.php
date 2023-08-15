@@ -27,6 +27,6 @@ $stmt->close();
 
 $conn->close();
 
-header("Location: welcome.php");
+header("Location: connect.php");
 exit();
 ?>
