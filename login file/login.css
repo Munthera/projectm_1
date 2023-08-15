@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins',sans-serif;
+}
+body{
+  display: flex;
+  height: 100vh;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: gold;
+}
+
+.login-form{
+  position: relative;
+  width: 370px;
+  height: auto;
+  background:transparent;
+  padding: 70px 35px 60px;
+  box-sizing: border-box;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  box-shadow:  0 0 30px rgba(131, 126, 126, 0.774);
+  color: #e21a1a;
+  backdrop-filter: blur(20px);
+  background-color: #000000;
+  
+  
+}
+.text{
+  font-size: 30px;
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+form{
+  margin-top: 40px;
+}
+form .field{
+  margin-top: 20px;
+  display: flex;
+}
+
+.field input{
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 15px;
+  color: #fffcfc;
+  padding: 0 15px;
+  border-radius: 0 5px 5px 0;
+  border: 1px solid #ffffff;
+  caret-color: #1010f3;
+  background-color: #343333 ;
+}
+form button{
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 15px;
+  color: #f9f4f4;
+  padding: 0 15px;
+  border-radius: 0 5px 5px 0;
+  border: 1px solid #444;
+  caret-color: #efeff1;
+  background: linear-gradient(#3f3f3f,#e7d1049a);
+}
+
+input:focus{
+  color: #ffffff;
+  box-shadow: 0 0 5px rgba(9, 243, 9, 0.2),
+              inset 0 0 5px rgba(177, 181, 177, 0.1);
+  background: linear-gradient(#e7d1049a,#343333);
+  animation: glow .8s ease-out infinite alternate;
+}
+@keyframes glow {
+   0%{
+    border-color: #091309;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2),
+                inset 0 0 5px rgba(0,0,0,.1);
+  }
+   100%{
+    border-color: rgb(255, 255, 255);
+    box-shadow: 0 0 20px rgba(66, 65, 65, 0.6),
+                inset 0 0 10px rgba(0, 0, 0, 0.4);
+  }
+}
+button,
+a {
+  margin-top: 30px;
+  border-radius: 5px!important;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-decoration: none; /* Added this line for anchor element */
+  color: #f7f4f4; /* Added this line for anchor element */
+}
+
+button:hover,
+a:hover {
+  color: #f3f3f3;
+  
+  /* border: 1px solid #e1ede1; */
+  /* box-shadow: 0 5PX 5px rgba(251, 251, 251, 0.3),
+              0 0 10px rgba(252, 254, 252, 0.2),
+              0 0 15px rgba(255, 255, 255, 0.1),
+              0 2px 0 black;
+              transition: all 0.5; */
+  
+  box-shadow: 0 0 5px #e9f1e94d,
+              0 0 10px rgba(179, 180, 179, 0.2),
+              0 0 15px #9da19d1a,
+              0 2px 0 rgb(119, 116, 116);
+}
+.link{
+  margin-top: 25px;
+  color: #414040;
+  font-weight: 700;
+}
+.link a{
+  color: #e7d1049a;
+  text-decoration: none;
+}
+.link a:hover{
+  text-decoration: none;
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  
+  .login-form {
+      width: 100%; /* Adjust the form width for smaller screens */
+      padding: 50px 25px 40px; /* Adjust the form padding for smaller screens */
+  }
+
+  .text {
+      font-size: 24px; /* Adjust the font size for the heading on smaller screens */
+  }
+
+  form .field .fas {
+      font-size: 18px; /* Adjust the icon size for smaller screens */
+  }
+
+  form .field input {
+      font-size: 13px; /* Adjust the font size for form inputs on smaller screens */
+  }
+
+  form button {
+      font-size: 14px; /* Adjust the font size for the button on smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .login-form {
+      width: 100%; /* Adjust the form width for even smaller screens */
+      padding: 50px 20px 30px; /* Adjust the form padding for even smaller screens */
+  }
+
+  .text {
+      font-size: 20px; /* Adjust the font size for the heading on even smaller screens */
+  }
+
+  form .field .fas {
+      font-size: 16px; /* Adjust the icon size for even smaller screens */
+  }
+
+  form .field input {
+      font-size: 12px;
+  }
+
+  form button {
+      font-size: 13px; 
+  }
+
+  .link {
+      font-size: 12px; 
+  }
+}
